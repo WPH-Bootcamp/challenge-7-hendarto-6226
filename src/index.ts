@@ -22,3 +22,31 @@
 // TODO: Jalankan fungsi main
 console.log('Welcome to TypeScript To-Do App!');
 console.log('Start building your app here...');
+
+// Tampilkan menu utama
+function showMenu(): void {
+  console.log('TO-DO LIST APPLICATION');
+  console.log('1. Tambah Task');
+  console.log('2. Lihat Semua Task');
+  console.log('3. Tandai Selesai');
+  console.log('4. Hapus Task');
+  console.log('5. Keluar');
+}
+
+function runTodoApp(): void {
+  const todoService = new TodoService();
+
+  let isRunning = true;
+  while (isRunning) {
+    showMenu();
+    const choice = prompt('Pilih menu:(1-5): "); ');
+
+    switch (choice) {
+      case '1':
+        const title = prompt('Masukkan judul task: ');
+
+        break;
+      // Add more cases for other menu options
+    }
+  }
+}
