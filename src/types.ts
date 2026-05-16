@@ -12,3 +12,9 @@ export interface Todo {
   title: string;
   completed: boolean;
 }
+// Type for Todo
+export type TodoResult = {
+  success: boolean;
+  data?: any;
+  message?: string;
+};
