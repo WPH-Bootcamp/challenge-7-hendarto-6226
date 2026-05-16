@@ -43,7 +43,7 @@ export class Todo {
 
   // Method to show completed or not
   getDisplayString(): string {
-    const status = this.completed ? '[✓]' : '[ ]';
+    const status = this.completed ? '[DONE]' : '[ACTIVE]';
     return `${status} ${this.id}. ${this.title}`;
   }
 }

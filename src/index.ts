@@ -32,7 +32,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-// Helper function to get user input
+// function to get user input
 function getUserInput(question: string): Promise<string> {
   return new Promise((resolve) => {
     rl.question(question, (answer) => {
@@ -41,7 +41,6 @@ function getUserInput(question: string): Promise<string> {
   });
 }
 
-// Async simulation function (keeping your original structure)
 async function asyncSimulation(): Promise<void> {
   return new Promise((resolve) => {
     setTimeout(() => {
